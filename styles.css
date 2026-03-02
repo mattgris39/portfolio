@@ -1,5 +1,3 @@
-
-/* effet plus agréable */
 html {
   scroll-behavior: smooth;
 }
@@ -16,7 +14,6 @@ section {
   --maxw: 1100px;
   --radius: 12px;
 
-  /* layout */
   --container: 980px;
   --pad: 24px;
   --section: 72px;
@@ -32,7 +29,7 @@ body {
   line-height: 1.6;
 }
 
-.hero-photo{
+.hero-photo {
   width: 180px;
   height: 180px;
   border-radius: 999px;
@@ -42,35 +39,33 @@ body {
   border: 1px solid color-mix(in srgb, var(--text) 18%, transparent);
   box-shadow: 0 18px 45px rgba(0,0,0,0.35);
 }
-/* 1) Layout global */
-.container{
+
+.container {
   width: min(var(--container), 100% - (var(--pad) * 2));
   margin-inline: auto;
 }
 
-section{
+section {
   padding-block: var(--section);
 }
 
-h2{ margin: 0 0 12px; }
+h2 { margin: 0 0 12px; }
 
-p{
+p {
   margin: 0 0 16px;
   line-height: 1.6;
   color: rgba(255,255,255,0.75);
 }
 
-/* Header / Nav */
-.header{ padding: 24px 0; }
+.header { padding: 24px 0; }
 
-.nav{
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* Navbar sticky + glass */
-.header{
+.header {
   position: sticky;
   top: 0;
   z-index: 50;
@@ -87,21 +82,20 @@ p{
   border-bottom: 1px solid rgba(17,24,39,0.10);
 }
 
-/* Nav spacing */
-.nav{
+.nav {
   max-width: var(--container);
   margin-inline: auto;
   padding-inline: var(--pad);
 }
 
 /* Liens nav plus “bouton” */
-.nav-link{
+.nav-link {
   padding: 8px 10px;
   border-radius: 10px;
   transition: background 150ms ease, transform 150ms ease, opacity 150ms ease;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   opacity: 1;
   background: rgba(255,255,255,0.06);
   transform: translateY(-1px);
@@ -111,7 +105,7 @@ p{
   background: rgba(17,24,39,0.06);
 }
 
-.nav-links{
+.nav-links {
   display: flex;
   gap: 32px;
   list-style: none;
@@ -120,13 +114,13 @@ p{
   border-radius: 10px;
 }
 
-.nav-link{
+.nav-link {
   color: var(--text);
   text-decoration: none;
   font-size: 14px;
 }
 
-.nav-link:hover{ 
+.nav-link:hover { 
   background: rgba(255,255,255,0.6);
   opacity: 0.7;
 }
@@ -135,7 +129,7 @@ p{
   display:none;
 }
 
-.logo{
+.logo {
   font-weight: 700; 
   text-decoration: none;
   color: var(--text);
@@ -153,16 +147,16 @@ p{
 }
 
 /* Hero micro-anim */
-.title{
+.title {
   animation: titleIn 500ms cubic-bezier(0.25, 1, 0.5, 1) both;
 }
 
-.subtitle{
+.subtitle {
   animation: fadeUp 650ms cubic-bezier(0.25, 1, 0.5, 1) both;
   animation-delay: 80ms;
 }
 
-.cta{
+.cta {
   animation: fadeUp 700ms cubic-bezier(0.25, 1, 0.5, 1) both;
   animation-delay: 140ms;
 }
@@ -172,7 +166,7 @@ p{
   to   { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes fadeUp{
+@keyframes fadeUp {
   from { opacity: 0; transform: translateY(12px); }
   to   { opacity: 1; transform: translateY(0); }
 }
@@ -208,33 +202,33 @@ p{
   transform: translateY(-2px);
 }
 
-.eyebrow{
+.eyebrow {
   font-size: 14px;
   color: var(--muted);
   margin-bottom: 16px;
 }
 
-.hero-tagline{
+.hero-tagline {
   font-size: 15px;
   color: var(--muted);
   margin-bottom: 20px;
   line-height: 1.6;
 }
 
-.tagline-en{
+.tagline-en {
   display: block;
   font-size: 14px;
   opacity: 0.8;
 }
 
-.title{
+.title {
   font-size: clamp(40px, 6vw, 72px);
   font-weight: 800;
   margin: 0 0 24px;
   animation: titleIn 500ms cubic-bezier(0.25,1,0.5,1) both;
 }
 
-.subtitle{
+.subtitle {
   max-width: 600px;
   color: var(--muted);
   font-size: 16px;
@@ -243,14 +237,14 @@ p{
   animation-delay: 140ms;
 }
 
-.grad{
+.grad {
   background: linear-gradient(90deg, rgb(206, 41, 206), blue, rgb(250, 169, 183));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-.cta{
+.cta {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -260,23 +254,21 @@ p{
   animation-delay: 140ms;
 }
 
-@keyframes titleIn{
+@keyframes titleIn {
   from { opacity: 0; transform: translateY(10px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes fadeUp{
+@keyframes fadeUp {
   from { opacity: 0; transform: translateY(12px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Respect accessibilité */
-@media (prefers-reduced-motion: reduce){
+@media (prefers-reduced-motion: reduce) {
   .title, .subtitle, .cta{ animation: none !important; }
 }
 
-/* Boutons */
-.btn{
+.btn {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -295,16 +287,15 @@ p{
     color 200ms ease;
 }
 
-.btn:hover{ transform: translateY(-3px); }
-.btn:active{ transform: translateY(1px); }
+.btn:hover { transform: translateY(-3px); }
+.btn:active { transform: translateY(1px); }
 
-.btn:focus-visible{
+.btn:focus-visible {
   outline: 2px solid var(--btn-color, #6366f1);
   outline-offset: 3px;
 }
 
-/* Gaming glass button */
-.btn-outline{
+.btn-outline {
   position: relative;
   overflow: hidden;
 
@@ -320,7 +311,7 @@ p{
     inset 0 0 12px rgba(255,255,255, 0.05);
 }
 
-.btn-outline::before{
+.btn-outline::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -336,11 +327,10 @@ p{
   opacity: 0.25;
 }
 
-.btn-outline:hover{
+.btn-outline:hover {
   color: var(--btn-color);
   transform: translateY(-6px) scale(1.04);
 
-  /* fallback puis color-mix */
   background: rgba(255,255,255,0.08);
   background: color-mix(in srgb, var(--btn-color) 18%, rgba(255,255,255,0.05));
 
@@ -356,21 +346,19 @@ p{
     inset 0 0 15px color-mix(in srgb, var(--btn-color) 30%, transparent);
 }
 
-/* Couleurs */
-.btn-purple{ --btn-color: #8b5cf6; }
-.btn-blue{  --btn-color: #3b82f6; }
-.btn-gray{  --btn-color: #ec4899; }  /* change si tu veux un vrai gris */
-.btn-pink{  --btn-color: #60c6fd; }
+.btn-purple { --btn-color: #8b5cf6; }
+.btn-blue {  --btn-color: #3b82f6; }
+.btn-gray {  --btn-color: #ec4899; }  
+.btn-pink {  --btn-color: #60c6fd; }
 
-/* 2) Cards + grid Projects */
-.grid{
+.grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
   margin-top: 18px;
 }
 
-.card{
+.card {
   border-radius: 16px;
   padding: 18px;
 
@@ -383,23 +371,23 @@ p{
   box-shadow: 0 12px 30px rgba(0,0,0,0.35);
 }
 
-.card-title{ margin: 0 0 8px; }
-.card-desc{ margin: 0 0 10px; }
+.card-title { margin: 0 0 8px; }
+.card-desc { margin: 0 0 10px; }
 
-.tags{
+.tags {
   margin: 0;
   color: rgba(255,255,255,0.65);
   font-size: 13px;
 }
 
-.card-actions{
+.card-actions {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   margin-top: 14px;
 }
 
-.progress-grid{
+.progress-grid {
   display: grid;
   gap: 18px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -411,39 +399,37 @@ p{
   }
 }
 
-/* Resume grid (réutilise les cards) */
-.resume-grid{
+.resume-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
   margin-top: 18px;
 }
 
-.list{
+.list {
   margin: 0;
   padding-left: 18px;
   color: rgba(255,255,255,0.75);
 }
 
-/* 3) Formulaire stylé */
-.form{
+.form {
   margin-top: 16px;
   display: grid;
   gap: 12px;
   max-width: 520px;
 }
 
-.field{
+.field {
   display: grid;
   gap: 6px;
 }
 
-label{
+label {
   font-size: 13px;
   color: rgba(255,255,255,0.7);
 }
 
-input, textarea{
+input, textarea {
   width: 100%;
   padding: 10px 12px;
 
@@ -458,47 +444,40 @@ input, textarea{
   -webkit-backdrop-filter: blur(10px);
 }
 
-input:focus, textarea:focus{
+input:focus, textarea:focus {
   border-color: rgba(255,255,255,0.22);
   box-shadow: 0 0 0 3px rgba(255,255,255,0.08);
 }
 
-textarea{
+textarea {
   min-height: 120px;
   resize: vertical;
 }
 
-/* Footer (au cas où) */
-.footer{ padding: 28px 0; }
+.footer { padding: 28px 0; }
 
-.footer-inner{
+.footer-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
 }
 
-.link{
+.link {
   color: var(--muted);
   text-decoration: none;
   transition: color 150ms ease;
 }
 
-.link:hover{ color: var(--text); }
+.link:hover { color: var(--text); }
 
-/* ================================
-   FIX POUR TES CLASSES ACTUELLES
-================================ */
-
-/* Projects grid */
-.projects-grid{
+.projects-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0,1fr));
   gap: 18px;
   margin-top: 18px;
 }
 
-/* Project cards */
 .project-card {
   border-radius: 16px;
   padding: 18px;
@@ -512,52 +491,50 @@ textarea{
   box-shadow: 0 12px 30px rgba(0,0,0,0.35);
 }
 
-/* Cards hover premium */
-.project-card, .resume-block{
+.project-card, .resume-block {
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 
-.project-card:hover, .resume-block:hover{
+.project-card:hover, .resume-block:hover {
   transform: translateY(-4px);
   border-color: rgba(255,255,255,0.14);
   box-shadow: 0 18px 45px rgba(0,0,0,0.35);
 }
 
-:root[data-theme="light"] .project-card:hover,
-:root[data-theme="light"] .resume-block:hover{
+:root [data-theme="light"] .project-card:hover,
+:root [data-theme="light"] .resume-block:hover {
   border-color: rgba(17,24,39,0.12);
   box-shadow: 0 18px 45px rgba(0,0,0,0.12);
 }
 
-.project-title{
+.project-title {
   margin: 0 0 8px;
 }
 
-.project-desc{
+.project-desc {
   margin: 0 0 10px;
 }
 
-.project-meta{
+.project-meta {
   margin: 0;
   font-size: 13px;
   color: rgba(255,255,255,0.65);
 }
 
-.project-links{
+.project-links {
   display: flex;
   gap: 10px;
   margin-top: 12px;
 }
 
-/* Resume grid */
-.resume-grid{
+.resume-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0,1fr));
   gap: 18px;
   margin-top: 18px;
 }
 
-.resume-block{
+.resume-block {
   border-radius: 16px;
   padding: 18px;
 
@@ -570,25 +547,24 @@ textarea{
   box-shadow: 0 12px 30px rgba(0,0,0,0.35);
 }
 
-/* Contact form */
-.contact-form{
+.contact-form {
   margin-top: 16px;
   display: grid;
   gap: 12px;
   max-width: 520px;
 }
 
-.field{
+.field {
   display: grid;
   gap: 6px;
 }
 
-label{
+label {
   font-size: 13px;
   color: rgba(255,255,255,0.7);
 }
 
-input, textarea{
+input, textarea {
   width: 100%;
   padding: 10px 12px;
 
@@ -603,26 +579,21 @@ input, textarea{
   -webkit-backdrop-filter: blur(10px);
 }
 
-input:focus, textarea:focus{
+input:focus, textarea:focus {
   border-color: rgba(255,255,255,0.22);
   box-shadow: 0 0 0 3px rgba(255,255,255,0.08);
 }
 
-textarea{
+textarea {
   min-height: 120px;
   resize: vertical;
 }
 
-/* Responsive */
-@media (max-width: 720px){
+@media (max-width: 720px) {
   .projects-grid{ grid-template-columns: 1fr; }
   .resume-grid{ grid-template-columns: 1fr; }
 }
 
-/* =========================
-   THEME SYSTEM (AUTO)
-   Si aucun thème manuel n'est défini
-========================= */
 @media (prefers-color-scheme: light) {
   :root:not([data-theme]) {
     --bg: #f7f7fb;
@@ -635,11 +606,8 @@ textarea{
     color: rgba(11, 16, 32, 0.75);
   }
 }
-/* =========================
-   LIGHT THEME (FINAL VARIABLES)
-   -> à mettre TOUT EN BAS du fichier
-========================= */
-:root[data-theme="light"]{
+
+:root[data-theme="light"] {
   --bg: #f5f6f8;
   --text: #111827;
   --muted: #4b5563;
@@ -651,65 +619,52 @@ textarea{
   color: rgba(17,24,39,0.85);
 }
 
-/* =========================
-   LIGHT: TEXT READABILITY FIX
-========================= */
-
-:root[data-theme="light"] p{
+:root[data-theme="light"] p {
   color: rgba(17,24,39,0.72);
 }
 
 :root[data-theme="light"] .section-subtitle,
-:root[data-theme="light"] .project-desc{
+:root[data-theme="light"] .project-desc {
   color: rgba(17,24,39,0.72);
 }
 
 :root[data-theme="light"] input,
-:root[data-theme="light"] textarea{
+:root[data-theme="light"] textarea {
   color: rgba(17,24,39,0.92);
 }
 
 :root[data-theme="light"] input::placeholder,
-:root[data-theme="light"] textarea::placeholder{
+:root[data-theme="light"] textarea::placeholder {
   color: rgba(17,24,39,0.45);
 }
 
-:root[data-theme="light"] .btn-outline{
+:root[data-theme="light"] .btn-outline {
   color: rgba(17,24,39,0.92);
 }
 
-/* =========================
-   LIGHT: CONTACT FIX (strong)
-========================= */
-
-/* Texte du bloc contact */
 :root[data-theme="light"] #contact,
-:root[data-theme="light"] #contact p{
+:root[data-theme="light"] #contact p {
   color: rgba(17,24,39,0.75);
 }
 
-/* Labels */
-:root[data-theme="light"] #contact label{
+:root[data-theme="light"] #contact label {
   color: rgba(17,24,39,0.80);
 }
 
-/* Champs */
 :root[data-theme="light"] #contact input,
-:root[data-theme="light"] #contact textarea{
+:root[data-theme="light"] #contact textarea {
   background: #ffffff;
   border: 1px solid rgba(17,24,39,0.18);
   color: rgba(17,24,39,0.92);
 }
 
-/* Placeholder (si tu en ajoutes plus tard) */
 :root[data-theme="light"] #contact input::placeholder,
-:root[data-theme="light"] #contact textarea::placeholder{
+:root[data-theme="light"] #contact textarea::placeholder {
   color: rgba(17,24,39,0.45);
 }
 
-/* Focus visible */
 :root[data-theme="light"] #contact input:focus,
-:root[data-theme="light"] #contact textarea:focus{
+:root[data-theme="light"] #contact textarea:focus {
   border-color: rgba(99,102,241,0.55);
   box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
 }
