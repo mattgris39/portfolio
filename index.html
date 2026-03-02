@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matthieu Gris — Portfolio</title>
+  <meta name="description" content="Portfolio de Matthieu Gris : projets, compétences et contact." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="header">
+    <nav class="container nav" aria-label="Navigation principale">
+      <a class="logo" href="#top" aria-label="Retour en haut">MG<span class="dot">.</span></a>
+
+      <button class="nav-toggle" type="button" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+        Menu
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#resume">Resume</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" type="button" aria-label="Changer de thème">☀︎</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+
+        <img
+          class="hero-photo"
+          src="images/hero-photo-320.png"
+          srcset="images/hero-photo-320.png 320w, images/hero-photo-512.png 512w"
+          sizes="120px"
+          alt="Photo de Matthieu Gris"
+        />
+
+        <p class="eyebrow">Hey, I'm</p>
+
+        <p class="hero-tagline">
+          Développeur web en formation — interfaces modernes, projets concrets.<br>
+            <span class="tagline-en">
+          Web developer in training — modern interfaces, real-world projects.
+            </span>
+        </p>
+
+
+        <h1 class="title" id="hero-title">
+          <span class="grad">Matthieu Gris</span>
+        </h1>
+
+        <p class="subtitle">
+          Développeur web en formation. J’aime créer des interfaces modernes et lisibles,
+          et transformer des idées en projets concrets.
+        </p>
+
+        <div class="cta">
+          <a class="btn btn-outline btn-purple" href="mailto:tonemail@email.com">
+            ✉︎ <span>Send an email</span>
+          </a>
+
+          <a class="btn btn-outline btn-blue" href="https://www.linkedin.com/in/matthieu-gris-alternant-motive-/" target="_blank" rel="noreferrer">
+            in <span>LinkedIn</span>
+          </a>
+
+          <a class="btn btn-outline btn-pink" href="assets/cv/CV-Matthieu-Gris.pdf" target="_blank" rel="noreferrer">
+            ⬆︎ <span>Resume</span>
+          </a>
+
+          <a class="btn btn-outline btn-gray" href="https://github.com/mattgris39" target="_blank" rel="noreferrer">
+            ⌂ <span>GitHub</span>
+          </a>
+        </div>
+
+        <a class="scroll-hint" href="#projects" aria-label="Aller aux projets">↓</a>
+      </div>
+    </section>
+
+    <!-- Projects (cards) -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title" id="projects-title">Projects</h2>
+          <p class="section-subtitle">Une sélection de projets pour montrer mon travail.</p>
+        </header>
+
+        <div class="grid">
+          <article class="card">
+            <h3 class="card-title">Projet 1</h3>
+            <p class="card-desc">Description courte : objectif, stack, ce que tu as appris.</p>
+
+            <p class="tags">HTML • CSS • JS</p>
+
+            <div class="card-actions">
+              <a class="btn btn-outline btn-purple" href="#" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="btn btn-outline btn-blue" href="#" target="_blank" rel="noreferrer">Live</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Projet 2</h3>
+            <p class="card-desc">Description courte : objectif, stack, ce que tu as appris.</p>
+
+            <p class="tags">HTML • Tailwind • JS</p>
+
+            <div class="card-actions">
+              <a class="btn btn-outline btn-purple" href="#" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="btn btn-outline btn-blue" href="#" target="_blank" rel="noreferrer">Live</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section class="section" id="resume" aria-labelledby="resume-title">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title" id="resume-title">Resume</h2>
+          <p class="section-subtitle">Parcours, compétences et expériences.</p>
+        </header>
+
+        <div class="resume-grid">
+          <div class="resume-block card">
+            <h3 class="resume-title">Compétences</h3>
+            <ul class="list">
+              <li>HTML / CSS / JavaScript</li>
+              <li>Responsive design</li>
+              <li>Git / GitHub</li>
+            </ul>
+          </div>
+
+          <div class="resume-block card">
+            <h3 class="resume-title">Expériences</h3>
+            <ul class="list">
+              <li>Expérience 1 — résumé en 1 ligne</li>
+              <li>Expérience 2 — résumé en 1 ligne</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Progress -->
+    <section class="section" id="progress" aria-labelledby="progress-title">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title" id="progress-title">Progress</h2>
+          <p class="section-subtitle">Ce que j’ai appris, ce que je sais faire aujourd’hui, et mes prochains objectifs.</p>
+        </header>
+
+        <div class="progress-grid">
+          <article class="card">
+            <h3 class="card-title">Ce que j’ai accompli</h3>
+            <ul class="list">
+              <li>Portfolio responsive (sections, navigation, dark/light mode).</li>
+              <li>UI moderne : effets glass, hover cards, hero animé.</li>
+              <li>Projets publiés + liens GitHub/Live.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Compétences en progression</h3>
+            <ul class="list">
+              <li>HTML sémantique + accessibilité (skip link, aria-label).</li>
+              <li>CSS : variables, layout, transitions, responsive.</li>
+              <li>JavaScript : DOM, localStorage (thème), interactions.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Objectifs court terme</h3>
+            <ul class="list">
+              <li>Ajouter 2–3 vrais projets (screens + stack + résultats).</li>
+              <li>Optimiser Lighthouse (perf + accessibilité).</li>
+              <li>Améliorer le formulaire (validation + message de succès).</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact (stylé) -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title" id="contact-title">Contact</h2>
+          <p class="section-subtitle">Un message et je te réponds rapidement.</p>
+        </header>
+
+        <form class="form card">
+          <div class="field">
+            <label for="name">Nom</label>
+            <input id="name" name="name" type="text" autocomplete="name" />
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" />
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6"></textarea>
+          </div>
+
+          <button class="btn btn-outline btn-purple" type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Matthieu Gris</p>
+      <a class="link" href="#top">Retour en haut</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
