@@ -13,22 +13,48 @@
 
   <header class="header">
     <nav class="container nav" aria-label="Navigation principale">
-      <a class="logo" href="#top" aria-label="Retour en haut">MG<span class="dot">.</span></a>
+      <a class="logo" href="#top" aria-label="Retour en haut">
+        <span class="logo-mark">MG</span>
+        <span class="logo-text">
+          <span class="logo-title">Matthieu Gris</span>
+          <span class="logo-baseline">Web Developer Portfolio</span>
+        </span>
+      </a>
 
-      <button class="nav-toggle" type="button" id="navToggle" aria-expanded="false" aria-controls="navLinks">
-        Menu
+      <button class="nav-toggle" type="button" id="navToggle" aria-expanded="false" aria-controls="navPanel" aria-label="Ouvrir le menu de navigation">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
       </button>
 
-      <ul class="nav-links" id="navLinks">
-        <li><a class="nav-link" href="#projects">Projects</a></li>
-        <li><a class="nav-link" href="#resume">Resumé</a></li>
-        <li><a class="nav-link" href="#contact">Contact</a></li>
-        <li>
-          <button class="theme-toggle" type="button" aria-label="Changer de thème">☀︎</button>
-        </li>
-      </ul>
+      <div class="nav-panel" id="navPanel">
+        <div class="nav-top">
+          <p class="nav-intro">Portfolio personnel · Presentation academique</p>
+          <div class="nav-badges" aria-label="Informations rapides">
+            <span class="nav-badge">Disponible alternance</span>
+            <span class="nav-badge">Basé en France</span>
+          </div>
+        </div>
+
+        <div class="nav-bottom">
+          <ul class="nav-links" id="navLinks">
+            <li><a class="nav-link is-active" href="#top">Accueil</a></li>
+            <li><a class="nav-link" href="#about">A propos</a></li>
+            <li><a class="nav-link" href="#progress">Competences</a></li>
+            <li><a class="nav-link" href="#projects">Projets</a></li>
+            <li><a class="nav-link" href="#resume">Parcours</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <a class="btn btn-outline btn-blue nav-cta-secondary" href="assets/cv/CV-Matthieu-Gris.pdf" target="_blank" rel="noreferrer">CV</a>
+            <a class="btn btn-outline btn-purple nav-cta-main" href="#contact">Contact</a>
+            <button class="theme-toggle" type="button" aria-label="Changer de thème">☀︎</button>
+          </div>
+        </div>
+      </div>
     </nav>
-  </header
+  </header>
 
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
@@ -41,6 +67,8 @@
           sizes="120px"
           alt="Photo de Matthieu Gris"
         />
+
+        <div id="about" aria-hidden="true"></div>
 
         <p class="eyebrow">Hey, I'm</p>
 
