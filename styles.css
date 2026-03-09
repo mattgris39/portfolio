@@ -1090,6 +1090,10 @@ section {
   .nav-intro {
     font-size: 11px;
   }
+
+  .skip-link {
+    display: none;
+  }
 }
 
 @media (hover: hover) and (pointer: fine) {
