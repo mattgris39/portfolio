@@ -1,8 +1,6 @@
-// Footer year (garde-le ✅)
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-// Theme toggle (manuel + sauvegarde)
 const themeBtn = document.querySelector(".theme-toggle");
 const root = document.documentElement;
 
@@ -34,7 +32,6 @@ if (themeBtn) {
   });
 }
 
-// Navigation mobile
 const nav = document.querySelector(".nav");
 const navToggle = document.getElementById("navToggle");
 const navPanel = document.getElementById("navPanel");
@@ -68,7 +65,6 @@ window.addEventListener("resize", () => {
   if (window.innerWidth > 980) setNavOpen(false);
 });
 
-// Lien actif selon la section visible
 const sectionIds = ["top", "about", "progress", "projects", "resume", "contact"];
 const sectionMap = new Map();
 
